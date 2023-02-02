@@ -1,0 +1,101 @@
+:root
+{
+    --very-dark-blue:hsl(233, 47%, 7%); /*  main backgound  */
+    --dark-desaturated-blue:hsl(244, 38%, 16%); /*  (card background)*/
+    --soft-violet:hsl(277, 64%, 61%); /* accent*/
+    --white: hsl(0, 0%, 100%); /*   (main heading, stats)*/
+    --slightly-transparent-white: hsla(0, 0%, 100%, 0.75);   
+}
+
+img
+{
+    max-inline-size: 100%;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    color: var(--white);
+    background-color: var(--very-dark-blue);
+    min-height: 100vh;
+}
+
+main
+{
+    padding: 1.5rem;
+}
+
+.card
+{
+    display: flex;
+    font-family: 'Inter';
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: var(--dark-desaturated-blue);
+}
+
+.card--info
+{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.card--info > *
+{
+    margin: 1em auto 1em auto;
+}
+.card--info h1
+{
+    font-size: 1.7em;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+.card--info p
+{
+    line-height: 1.5em;
+    opacity: .8;
+}
+
+.card--stat-data
+{
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8em;
+
+    margin: 1rem auto 1rem auto;
+    text-transform: uppercase;
+    color: var(--slightly-transparent-white);
+}
+
+
+.card--stat-data::before
+{
+    content: attr(value);
+    font-weight: 700;
+    font-family: 'Inter';
+    font-size: 1.5em;
+    padding: .5rem;
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+.accent
+{
+    color: var(--soft-violet);
+}
+
