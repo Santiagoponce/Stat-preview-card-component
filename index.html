@@ -19,33 +19,42 @@
   <main>
     
     <article class="card">
-      
-      
-      <picture>
-        <source media="(min-width:500px)"srcset="images/image-header-desktop.jpg">
+    
+      <picture class="card__cover">
+        <source media="(min-width:580px )"srcset="images/image-header-desktop.jpg">
         <img alt="" src="images/image-header-mobile.jpg">
+
+        <div class="card__cover--pink-layer"></div>
       </picture>
 
-      <section class="card--info">
+      
+      <section class="card__info">
       <h1>Get <span class="accent">insights</span> that help your business grow.</h1>
       <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-      </section>
       
-      <ul class="card--stats">
-        <li class="card--stat">
-          <data class="card--stat-data" value="10K+">companies</data>
+      <ul class="card__stats">
+        <li class="card__stat">
+          <data class="card__stat-data" value="10K+">companies</data>
         </li>
 
-        <li class="card--stat">
-          <data class="card--stat-data" value="314">templates</data>
+        <li class="card__stat">
+          <data class="card__stat-data" value="314">templates</data>
         </li>
 
-        <li class="card--stat">
-          <data class="card--stat-data" value="12M+">queries</data>
+        <li class="card__stat">
+          <data class="card__stat-data" value="12M+">queries</data>
         </li>
       </ul>
+    </section>
     
   </article>
+
 </main>
+
+
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a class="author"href="#">Ponce, Santiago</a>.
+</div>
 </body>
 </html>
