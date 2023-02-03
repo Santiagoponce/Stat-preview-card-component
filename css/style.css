@@ -27,10 +27,17 @@ body
     color: var(--white);
     background-color: var(--very-dark-blue);
     min-height: 100vh;
+    width: auto;
+    display: flex;
+    font-family: 'Inter';
+}
+
+main
+{
     display: flex;
     flex-direction: column;
+
     align-items: center;
-    font-family: 'Inter';
 }
 
 
